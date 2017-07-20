@@ -16,7 +16,6 @@ body{
     line-height: 1.8;
     margin: 0;
     background-color: #eeebda;
-    display: flex;
 
 }
 h1, h2, h3{
@@ -31,12 +30,12 @@ img{
 }
 .wrapper{
     width: 1000px;
-    margin: 30px;
+    margin: 0 30px;
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    top:50px;
-    left: 50px;
+    left: 100px;
+
     /*
         TODO:
         - Center up the page
@@ -125,7 +124,7 @@ main{
     width: 600px;
     position: relative;
     top: -50px;
-    left: 75px;
+    left: 40px;
     float: left;
     z-index: 1;
     flex-shrink:1;
@@ -144,6 +143,7 @@ aside{
     flex-basis: 200px;
     position: relative;
     top: -50px;
+    left: 35px;
 
 
     /*
@@ -191,6 +191,9 @@ article img{
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
+    float: right;
+    clear: right;
+    width: 200px;
 }
 article footer p{
     /*
@@ -198,8 +201,16 @@ article footer p{
         - Style the article footer
         HINT: Look to the article header;
     */
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    border-top: 1px solid #ccc;
 }
 #site-footer{
+    width: 1200px;
+    height: 50px;
+    color: white;
+    text-align: center;
 
     background: #333;
     /*
